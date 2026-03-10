@@ -1,0 +1,92 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background: rgba(22, 21, 18, 0.8);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(197, 159, 89, 0.2);
+}
+
+.container {
+    max-width: 80rem;
+    /* 1280px */
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.icon {
+    color: var(--color-primary);
+    font-size: 1.875rem;
+}
+
+.nav {
+    display: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+    }
+}
+
+.nav a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--color-primary);
+}
+
+.bookBtn {
+    background-color: var(--color-primary);
+    color: var(--color-bg-dark);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+.bookBtn:hover {
+    background-color: rgba(197, 159, 89, 0.9);
+}
+
+.mobileMenu {
+    display: block;
+    color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .mobileMenu {
+        display: none;
+    }
+}

@@ -1,0 +1,138 @@
+.menu {
+    padding: 6rem 0;
+    background-color: var(--color-bg-dark);
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    color: var(--color-text-light);
+}
+
+.subtitle {
+    color: var(--color-primary);
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filterBtn {
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* white/5 */
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    color: var(--color-text-light);
+}
+
+.filterBtn:hover {
+    background-color: rgba(197, 159, 89, 0.2);
+}
+
+.filterActive,
+.filterActive:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg-dark);
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.menuCard {
+    background-color: rgba(24, 24, 27, 0.5);
+    /* zinc-900/50 */
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid rgba(197, 159, 89, 0.05);
+}
+
+.menuCard:hover .image {
+    transform: scale(1.05);
+}
+
+.imageContainer {
+    height: 14rem;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.cardContent {
+    padding: 1.5rem;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+}
+
+.cardPrice {
+    color: var(--color-primary);
+    font-weight: 900;
+}
+
+.cardDesc {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+}

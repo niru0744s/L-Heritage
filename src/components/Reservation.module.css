@@ -1,0 +1,136 @@
+.reservation {
+    position: relative;
+    padding: 6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 42rem;
+    /* 2xl */
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.card {
+    background-color: rgba(22, 21, 18, 0.9);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(197, 159, 89, 0.2);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 4rem;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--color-text-muted);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.row {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputGroup label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* white/5 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #fff;
+    transition: colors 0.3s ease;
+    font-family: inherit;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.submitBtn {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-bg-dark);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submitBtn:hover {
+    box-shadow: 0 0 30px rgba(197, 159, 89, 0.3);
+}
+
+.footerNote {
+    text-align: center;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #64748b;
+    /* slate-500 */
+    margin-top: 1rem;
+    font-style: italic;
+}

@@ -1,0 +1,57 @@
+:root {
+  --color-primary: #c59f59;
+  --color-bg-light: #f8f7f6;
+  --color-bg-dark: #161512;
+  --color-accent: #4a0e0e;
+  
+  --color-text-dark: #cbd5e1; /* slate-300 */
+  --color-text-light: #f1f5f9; /* slate-100 */
+  --color-text-muted: #94a3b8; /* slate-400 */
+
+  --font-display: 'Work Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: var(--color-bg-dark); /* Default to dark as it's a luxury restaurant */
+  color: var(--color-text-light);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
